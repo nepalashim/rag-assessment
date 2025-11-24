@@ -2,7 +2,7 @@
 
 A production-ready **Retrieval-Augmented Generation (RAG)** system built with FastAPI. This system allows you to upload documents (PDF/TXT), ask questions about them using AI, and book interviews - all powered by modern AI technologies.
 
-## 🚀 Features
+##  Features
 
 - ✅ **Document Ingestion**: Upload PDF and TXT files
 - ✅ **Two Chunking Strategies**: Fixed-size and semantic chunking
@@ -15,7 +15,7 @@ A production-ready **Retrieval-Augmented Generation (RAG)** system built with Fa
 - ✅ **RESTful API**: Complete API with Swagger documentation
 - ✅ **No Pre-built Chains**: Custom RAG implementation from scratch
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -27,13 +27,13 @@ A production-ready **Retrieval-Augmented Generation (RAG)** system built with Fa
 | **LLM** | Groq (cloud, free API) |
 | **ORM** | SQLAlchemy |
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - **Python**: 3.9 or higher
 - **Docker & Docker Compose**: For running PostgreSQL, Redis, and Qdrant
 - **Groq API Key**: Free account at [console.groq.com](https://console.groq.com)
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone the Repository
 
@@ -162,7 +162,7 @@ Open your browser and visit:
 
 ---
 
-## 📚 Testing the API with Swagger UI
+##  Testing the API with Swagger UI
 
 Access the interactive API documentation at **http://localhost:8000/docs** and test all endpoints visually.
 
@@ -245,7 +245,7 @@ Access the interactive API documentation at **http://localhost:8000/docs** and t
 }
 ```
 
-**Your RAG system just answered a question using your document!** 🎉
+**Your RAG system just answered a question using your document!** 
 
 ---
 
@@ -263,7 +263,7 @@ Access the interactive API documentation at **http://localhost:8000/docs** and t
 
 3. **Click** "Execute"
 
-**The system remembers your previous question and provides context-aware answers!** 🧠
+**The system remembers your previous question and provides context-aware answers!** 
 
 ---
 
@@ -340,7 +340,7 @@ Ask specific questions about your document:
 3. **Enter** `test-session-001` in the `session_id` field
 4. **Click** "Execute"
 
-**You'll see your entire conversation history!** 📜
+**You'll see your entire conversation history!** 
 
 ---
 
@@ -387,7 +387,7 @@ Ask specific questions about your document:
 
 ---
 
-## 🧪 Complete Test Checklist
+##  Complete Test Checklist
 
 - [ ] ✅ Upload document (fixed chunking)
 - [ ] ✅ List all documents
@@ -403,7 +403,7 @@ Ask specific questions about your document:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 rag-assessment/
@@ -439,7 +439,7 @@ rag-assessment/
 └── README.md               # This file
 ```
 
-## 🔧 Development
+##  Development
 
 ### View Logs
 
@@ -492,7 +492,7 @@ python -m app.main
 
 ---
 
-## 🎯 Key Features Explained
+##  Key Features Explained
 
 ### Chunking Strategies
 
@@ -522,7 +522,7 @@ Use the same `session_id` for related questions. The system maintains conversati
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Services Not Starting
 
@@ -593,7 +593,7 @@ pip install --upgrade certifi
 
 ---
 
-## 🌐 Environment Variables
+##  Environment Variables
 
 | Variable | Description | Default |
 |----------|-------------|---------|
@@ -611,7 +611,7 @@ pip install --upgrade certifi
 
 ---
 
-## 📦 Docker Services
+##  Docker Services
 
 The `docker-compose.yml` file sets up three services:
 
@@ -623,7 +623,7 @@ All services use persistent volumes to retain data across restarts.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Groq**: For free, fast LLM API
 - **Qdrant**: For excellent vector database
