@@ -147,12 +147,19 @@ docker-compose ps
 # - rag_qdrant
 ```
 
-### 7. Wait for Services to be Ready
+### . Wait for Services to be Ready
 
 ```bash
 # Wait 10 seconds for PostgreSQL to fully initialize
 sleep 10
 ```
+### 7. Initialize Database (Optional but Recommended)
+
+If this is the first time running the project or your database is empty, run:
+
+```bash
+python -c "from app.db.database import init_db; init_db()"
+
 
 ### 8. Start the Application
 
