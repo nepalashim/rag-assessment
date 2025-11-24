@@ -2,6 +2,29 @@
 
 A production-ready **Retrieval-Augmented Generation (RAG)** system built with FastAPI. This system allows you to upload documents (PDF/TXT), ask questions about them using AI, and book interviews - all powered by modern AI technologies.
 
+## 🔄 Pipeline Flow (Text Version)
+
+```text
+1. Document Upload
+   ↓
+2. Text Extraction
+   ↓
+3. Chunking
+   ↓
+4. Generate Embeddings  ← Local sentence-transformers ✅
+   ↓
+5. Store Embeddings in Qdrant
+   ↓
+6. User Sends Query
+   ↓
+7. Semantic Search for Similar Chunks
+   ↓
+8. Generate Answer  ← Cloud Groq LLM ✅
+   ↓
+9. Return Final Response to User
+
+```
+
 ##  Features
 
 - ✅ **Document Ingestion**: Upload PDF and TXT files
@@ -38,7 +61,7 @@ A production-ready **Retrieval-Augmented Generation (RAG)** system built with Fa
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone git@github.com:nepalashim/rag-assessment.git
 cd rag-assessment
 ```
 
