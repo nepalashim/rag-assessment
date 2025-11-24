@@ -1,6 +1,3 @@
-"""
-Conversational RAG and Interview Booking API endpoints.
-"""
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 import uuid

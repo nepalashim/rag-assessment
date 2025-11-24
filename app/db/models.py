@@ -1,6 +1,3 @@
-"""
-SQLAlchemy database models.
-"""
 from datetime import datetime
 from sqlalchemy import Column, String, Integer, DateTime, Text, Float
 from sqlalchemy.ext.declarative import declarative_base

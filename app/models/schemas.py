@@ -6,7 +6,7 @@ from datetime import datetime
 from pydantic import BaseModel, EmailStr, Field
 
 
-# ============= Document Ingestion Schemas =============
+#  Document Ingestion Schemas 
 
 class DocumentIngestionRequest(BaseModel):
     """Request model for document ingestion."""
@@ -28,7 +28,7 @@ class DocumentIngestionResponse(BaseModel):
     model_config = {"from_attributes": True}
 
 
-# ============= Chat/RAG Schemas =============
+# Chat/RAG Schemas
 
 class ChatRequest(BaseModel):
     """Request model for chat/RAG endpoint."""
@@ -53,7 +53,7 @@ class ChatResponse(BaseModel):
     timestamp: datetime = Field(default_factory=datetime.utcnow)
 
 
-# ============= Interview Booking Schemas =============
+# Interview Booking Schemas 
 
 class BookingRequest(BaseModel):
     """Request model for interview booking."""
@@ -78,7 +78,7 @@ class BookingResponse(BaseModel):
     model_config = {"from_attributes": True}
 
 
-# ============= Generic Responses =============
+# Generic Responses
 
 class ErrorResponse(BaseModel):
     """Error response model."""

@@ -1,6 +1,3 @@
-"""
-Database connection and session management.
-"""
 from typing import Generator
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
@@ -8,14 +5,14 @@ from app.config import settings
 from app.db.models import Base
 
 
-# Create database engine
+# Creating database engine
 engine = create_engine(
     settings.database_url,
     pool_pre_ping=True,
     echo=settings.debug
 )
 
-# Create session factory
+# Creating session factory
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 

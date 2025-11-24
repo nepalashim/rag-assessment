@@ -1,6 +1,6 @@
-"""
-FastAPI application entry point.
-"""
+
+#FastAPI application entry point.
+
 # Fix SSL issues for development
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context

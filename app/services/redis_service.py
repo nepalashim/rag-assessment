@@ -1,6 +1,3 @@
-"""
-Redis service for managing chat memory and conversation history.
-"""
 from typing import List, Dict, Any, Optional
 import json
 import redis

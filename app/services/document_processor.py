@@ -1,6 +1,3 @@
-"""
-Document processing service for extracting text from PDF and TXT files.
-"""
 from typing import Tuple, BinaryIO
 import PyPDF2
 from io import BytesIO

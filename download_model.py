@@ -2,7 +2,7 @@
 Pre-download the sentence-transformers embedding model.
 
 Note: This is for EMBEDDINGS only, NOT for LLM.
-Since you're using Groq, the LLM runs in the cloud (no download needed).
+Since I am using Groq, the LLM runs in the cloud (no download needed).
 But embeddings run locally, so we need to download this model.
 """
 
@@ -12,9 +12,9 @@ print("=" * 60)
 try:
     print("Importing sentence_transformers...")
     from sentence_transformers import SentenceTransformer
-    print("✅ Import successful!")
+    print(" Import successful!")
 except ImportError as e:
-    print(f"❌ Failed to import sentence_transformers: {e}")
+    print(f" Failed to import sentence_transformers: {e}")
     print("\nPlease install it:")
     print("  pip install sentence-transformers")
     exit(1)
@@ -24,7 +24,7 @@ import os
 print("=" * 60)
 print("DOWNLOADING EMBEDDING MODEL")
 print("=" * 60)
-print("\n⚠️  Important:")
+print("\n  Important:")
 print("   - This downloads the EMBEDDING model (runs locally)")
 print("   - Your LLM (Groq) runs in the cloud (no download needed)")
 print("   - Just need this embedding model (~80 MB)")
@@ -43,31 +43,31 @@ try:
     print("Downloading... (this happens only once)")
     model = SentenceTransformer(model_name)
     
-    print("\n✅ Model downloaded successfully!")
+    print("\n Model downloaded successfully!")
     
     # Test the model
-    print("\n🧪 Testing model with sample text...")
+    print("\n Testing model with sample text...")
     test_text = "This is a test sentence for embedding generation."
     embedding = model.encode(test_text)
     
-    print(f"✅ Generated embedding of dimension: {len(embedding)}")
-    print(f"✅ Embedding model is ready to use!")
+    print(f"Generated embedding of dimension: {len(embedding)}")
+    print(f" Embedding model is ready to use!")
     
     # Show cache location
     cache_dir = os.path.expanduser("~/.cache/torch/sentence_transformers/")
-    print(f"\n📁 Model cached at:")
+    print(f"\n Model cached at:")
     print(f"   {cache_dir}")
     
     print("\n" + "=" * 60)
-    print("✅ SETUP COMPLETE!")
+    print(" SETUP COMPLETE!")
     print("=" * 60)
     print("\nYour setup:")
-    print("  • Embeddings: sentence-transformers (local) ✅")
-    print("  • LLM: Groq (cloud) ✅")
+    print("  • Embeddings: sentence-transformers (local) ")
+    print("  • LLM: Groq (cloud) ")
     print("  • No more downloads needed!")
     
 except Exception as e:
-    print(f"\n❌ Error downloading model: {e}")
+    print(f"\n Error downloading model: {e}")
     print("\nTroubleshooting:")
     print("  1. Check internet connection")
     print("  2. Make sure you have ~100 MB free disk space")

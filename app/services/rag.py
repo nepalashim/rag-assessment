@@ -1,7 +1,3 @@
-"""
-Custom RAG (Retrieval-Augmented Generation) service.
-No pre-built chains - all logic implemented from scratch.
-"""
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -17,7 +13,7 @@ from app.services.redis_service import get_redis_service
 
 
 class RAGService:
-    """Custom RAG implementation without using pre-built chains."""
+   
     
     def __init__(self):
         """Initialize RAG service with required components."""

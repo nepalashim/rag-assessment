@@ -1,6 +1,3 @@
-"""
-Embedding generation service using sentence-transformers or OpenAI.
-"""
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 

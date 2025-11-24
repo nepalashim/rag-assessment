@@ -1,6 +1,3 @@
-"""
-Text chunking strategies for document processing.
-"""
 from typing import List, Dict, Any
 import re
 from app.config import settings
