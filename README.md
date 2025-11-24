@@ -2,7 +2,7 @@
 
 A production-ready **Retrieval-Augmented Generation (RAG)** system built with FastAPI. This system allows you to upload documents (PDF/TXT), ask questions about them using AI, and book interviews - all powered by modern AI technologies.
 
-## 🔄 Pipeline Flow (Text Version)
+## 🔄 Pipeline Flow 
 
 ```text
 1. Document Upload
@@ -11,7 +11,7 @@ A production-ready **Retrieval-Augmented Generation (RAG)** system built with Fa
    ↓
 3. Chunking
    ↓
-4. Generate Embeddings  ← Local sentence-transformers ✅
+4. Generate Embeddings  ← Local sentence-transformers 
    ↓
 5. Store Embeddings in Qdrant
    ↓
@@ -19,7 +19,7 @@ A production-ready **Retrieval-Augmented Generation (RAG)** system built with Fa
    ↓
 7. Semantic Search for Similar Chunks
    ↓
-8. Generate Answer  ← Cloud Groq LLM ✅
+8. Generate Answer  ← Cloud Groq LLM 
    ↓
 9. Return Final Response to User
 
